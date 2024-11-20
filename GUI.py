@@ -1,26 +1,24 @@
 from tkinter import *
-root = Tk()
-
-import tkinter as TK 
 from Book import Book
 from customer import Customer 
 from order import Order
 
-class BookstoreApp:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("Bookstore Inventory Management")
+class BookstoreApp(Tk):
+    def __init__(self, *args, **kwargs):
+        Tk.__init__(self, *args, **kwargs)
+        self.title("Bookstore Inventory Management")
 
         # Create the GUI elements here
         # for example
-        self.label = Tk.Label(root, text="welcome to the Bookstore Inventory Management System")
+        self.label = Label(text="welcome to the Bookstore Inventory Management System")
+        self.label.pack()
 
-        # add aditional elements and layout
+        # add additional elements and layout
 
-        def run(self):
-            self.root.mainloop()
+        # be sure to use grid() so the elements appear!
+        # do not use pack()! while simplier, grid() is far more flexible
 
 if __name__ == "__main__":
-    root = Tk.TK()
-    app = BookstoreApp(root)
-    app.run()
+    app = BookstoreApp()
+    app.mainloop()
+
