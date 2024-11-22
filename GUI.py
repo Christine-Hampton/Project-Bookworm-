@@ -10,7 +10,7 @@ class BookstoreApp(Tk):
 
         # Create the GUI elements here
         # for example
-        self.label = Label(text="welcome to the Bookstore Inventory Management System")
+        self.label = Label(text="Welcome to the BookWorm Inventory Management System")
         self.label.pack()
 
         # add additional elements and layout
