@@ -7,7 +7,7 @@ class Order:
         self.list_of_books = list_of_books
         self.order_date = order_date 
 
-     def save_to_db(self):
+    def save_to_db(self):
         connection = sqlite3.connect('bookstore.db')
         cursor = connection.cursor()
         cursor.execute('INSERT INTO orders (customer_id, book_id, order_date) VALUES (?, ?, ?,)',

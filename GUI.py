@@ -7,6 +7,7 @@ import sqlite3
 class BookstoreApp(Tk):
     def __init__(self, *args, **kwargs):
         global system
+        global data
         import time
         
         Tk.__init__(self, *args, **kwargs)
@@ -47,18 +48,14 @@ class BookstoreApp(Tk):
 
         menu = Frame(self)
         menuLabel = Label(menu, text = "Menu", font = HotbarFont, bg = 'gray')
-        inventoryBtn = Button(menu, text = "Inventory", font = BtnFont,
-                              command = self.Inventory)
-        customerBtn = Button(menu, text = "Customers", font = BtnFont,
-                             command = self.Customers)
-        statusBtn = Button(menu, text = "Status", font = BtnFont,
-                           command = self.Status)
-        addBookBtn = Button(menu, text="Add Book", font=BtnFont,
+        addBookBtn = Button(menu, text="Book", font=BtnFont,
                             command=self.show_add_book_form)
-        addCustomerBtn = Button(menu, text="Add Customer", font=BtnFont,
+        addCustomerBtn = Button(menu, text="Customer", font=BtnFont,
                                 command=self.show_add_customer_form)
-        addOrderBtn= Button (menu, text="Add Order", font=BtnFont,
+        addOrderBtn= Button (menu, text="Order", font=BtnFont,
                              command=self.show_add_order_form)
+        quitBtn = Button(menu, text="Quit", font=BtnFont,
+                         command=self.quit)
         
 
         header.grid(row = 0, column = 0, columnspan = 10)
@@ -69,41 +66,53 @@ class BookstoreApp(Tk):
         clock.grid(row = 1, column = 2, sticky = 'ew')
         update_time()
 
-        menu.grid(row = 1, column = 0, sticky = 'ew')
-        menuLabel.grid(row = 0, column = 0, sticky = 'ew')
-        inventoryBtn.grid(row = 1, column = 0, sticky = 'ew')
-        customerBtn.grid(row = 2, column = 0, sticky = 'ew')
-        statusBtn.grid(row = 3, column = 0, sticky = 'ew')
-        addBookBtn.grid(row=4, column=0, sticky='ew')
-        addCustomerBtn.grid(row=5, column=0, sticky='ew')
-        addOrderBtn.grid(row=6, column=0, sticky='ew')
+        menu.grid(row = 1, column = 0, sticky = 'nsew')
+        menuLabel.grid(row = 0, column = 0, sticky = 'nsew')
+        addBookBtn.grid(row=1, column=0, sticky='ew')
+        addCustomerBtn.grid(row=2, column=0, sticky='ew')
+        addOrderBtn.grid(row=3, column=0, sticky='ew')
+        quitBtn.grid(row=4, column=0, sticky='ew')
         
         system = Frame(self)
         system.grid(row = 1, column = 1, sticky = 'n')
+
+        data = Frame(self)
+        data.grid(row = 1, column = 2)
     
     def show_add_book_form(self):
-        form = Toplevel(self)
-        form.title("Add Book")
+        #form = Toplevel(self)
+        #form.title("Add Book")
+        global system
+        system.destroy()
+        system = Frame(self)
+        system.grid(row = 1, column = 1, sticky = 'n')
 
-        Label(form, text="Title").pack()
-        title_entry = Entry(form)
+        Label(system, text="Title").pack()
+        title_entry = Entry(system)
         title_entry.pack()
 
-        Label(form, text="Author").pack()
-        author_entry = Entry(form)
+        Label(system, text="Author").pack()
+        author_entry = Entry(system)
         author_entry.pack()
 
-        Label(form, text="ISBN").pack()
-        isbn_entry = Entry(form)
+        Label(system, text="ISBN").pack()
+        isbn_entry = Entry(system)
         isbn_entry.pack()
 
-        Label(form, text="Price").pack()
-        price_entry = Entry(form)
+        Label(system, text="Price").pack()
+        price_entry = Entry(system)
         price_entry.pack()
 
-        Label(form, text="Quantity").pack()
-        quantity_entry = Entry(form)
+        Label(system, text="Quantity").pack()
+        quantity_entry = Entry(system)
         quantity_entry.pack()
+
+        #####
+
+        global data
+        data.destroy()
+        data = Frame(self)
+        data.grid(row = 1, column = 2)
 
         def add_book():
             title = title_entry.get()
@@ -115,30 +124,42 @@ class BookstoreApp(Tk):
             new_book = Book(title, author, isbn, price, quantity)
             new_book.save_to_db()
             print(f"Book Added: {new_book.title}")
-            form.destroy()
+            #form.destroy()
             self.view_inventory()
 
-        Button(form, text="Add", command=add_book).pack()
+        Button(system, text="Add", command=add_book).pack()
     
     def show_add_customer_form(self):
-        form = Toplevel(self)
-        form.title("Add Customer")
+        #form = Toplevel(self)
+        #form.title("Add Customer")
 
-        Label(form, text="Name").pack()
-        name_entry = Entry(form)
+        global system
+        system.destroy()
+        system = Frame(self)
+        system.grid(row = 1, column = 1, sticky = 'n')
+
+        Label(system, text="Name").pack()
+        name_entry = Entry(system)
         name_entry.pack()
 
-        Label(form, text="Customer ID").pack()
-        customer_id_entry= Entry(form)
+        Label(system, text="Customer ID").pack()
+        customer_id_entry= Entry(system)
         customer_id_entry.pack()
 
-        Label(form, text="Email").pack()
-        email_entry = Entry(form)
+        Label(system, text="Email").pack()
+        email_entry = Entry(system)
         email_entry.pack()
 
-        Label(form, text="Phone Number").pack()
-        phone_entry = Entry(form)
+        Label(system, text="Phone Number").pack()
+        phone_entry = Entry(system)
         phone_entry.pack()
+
+        #####
+
+        global data
+        data.destroy()
+        data = Frame(self)
+        data.grid(row = 1, column = 2)
 
         def add_customer():
             name = name_entry.get()
@@ -149,26 +170,38 @@ class BookstoreApp(Tk):
             new_customer = Customer(name, customer_id, email, phone_number)
             new_customer.save_tp_db()
             print(f"Customer Added: {new_customer.name}")
-            form.destroy()
+            #form.destroy()
             self.view_customers()
 
-        Button(form, text="Add", command=add_customer).pack()
+        Button(system, text="Add", command=add_customer).pack()
 
     def show_add_order_form(self):
-        form = Toplevel(self)
-        form.title("Add Order")
+        #form = Toplevel(self)
+        #form.title("Add Order")
 
-        Label(form, text="Customer ID").pack()
-        customer_id_entry = Entry(form)
-        customer_id_entry = Entry.pack()
+        global system
+        system.destroy()
+        system = Frame(self)
+        system.grid(row = 1, column = 1, sticky = 'n')
 
-        Label(form, text="Book ID").pack()
-        book_id_entry = Entry(form)
+        Label(system, text="Customer ID").pack()
+        customer_id_entry = Entry(system)
+        customer_id_entry.pack()
+
+        Label(system, text="Book ID").pack()
+        book_id_entry = Entry(system)
         book_id_entry.pack()
 
-        Label(form, text="Order Date (YYYY-MM-DD)").pack()
-        order_date_entry = Entry(form)
+        Label(system, text="Order Date (YYYY-MM-DD)").pack()
+        order_date_entry = Entry(system)
         order_date_entry.pack()
+
+        #####
+
+        global data
+        data.destroy()
+        data = Frame(self)
+        data.grid(row = 1, column = 2)
 
         def add_order():
             customer_id = int(customer_id_entry.get())
@@ -178,20 +211,13 @@ class BookstoreApp(Tk):
             new_order = Order(customer_id, book_id, order_date)
             new_order.save_to_db()
             print(f"Order Added: Customer ID {new_order.customer_id}, Book ID {new_order.book_id}")
-            form.destroy()
+            #form.destroy()
         
-        Button(form, text="Add", command=add_order).pack()
-         
-    def Inventory(self):
-        text = Label(system, text = "It worked!!!!")
-        text.grid(row = 0, column = 0)
+        Button(system, text="Add", command=add_order).pack()
 
-    def Customers(self):
-        text = Label(system, text = "Something different...")
-        text.grid(row = 0, column = 0)
-        
-    def Status(self):
-        pass
+    def quit(self):
+        self.destroy()
+
 
 if __name__ == "__main__":
     app = BookstoreApp()
