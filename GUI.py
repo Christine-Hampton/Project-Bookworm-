@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import ttk
 from Book import Book
 from customer import Customer 
 from order import Order
@@ -42,11 +43,12 @@ class BookstoreApp(Tk):
         header = Frame(self, bg = 'blue')
         logo = Label(header, text = "BookWorm Inventory Manager", font = HeaderFont, bg = "blue", fg = "white")
 
-        greet = Label(header, text = " Welcome to the BookWorm Inventory Manager       ", font = HotbarFont, bg = 'cyan')
-        date = Label(header, text = time.strftime(date_format, t) + "       ", font = HotbarFont, bg = 'cyan')
-        clock = Label(header, text = time.strftime(time_format, t) + " ", font = HotbarFont, bg = 'cyan')
+        hotbar = Frame(self, bg = 'cyan')
+        greet = Label(hotbar, text = " Welcome to the BookWorm Inventory Manager       ", font = HotbarFont, bg = 'cyan')
+        date = Label(hotbar, text = time.strftime(date_format, t) + "       ", font = HotbarFont, bg = 'cyan')
+        clock = Label(hotbar, text = time.strftime(time_format, t) + " ", font = HotbarFont, bg = 'cyan')
 
-        menu = Frame(self)
+        menu = Frame(self, bg = 'gray')
         menuLabel = Label(menu, text = "Menu", font = HotbarFont, bg = 'gray')
         addBookBtn = Button(menu, text="Book", font=BtnFont,
                             command=self.show_add_book_form)
@@ -58,26 +60,27 @@ class BookstoreApp(Tk):
                          command=self.quit)
         
 
-        header.grid(row = 0, column = 0, columnspan = 10)
-        logo.grid(row = 0, column = 0, columnspan = 10, sticky = 'w', padx = 5, pady = 5)
-        
+        header.grid(row = 0, column = 0, columnspan = 20, sticky = 'nsew')
+        logo.grid(row = 0, column = 0, columnspan = 20, sticky = 'w', padx = 5, pady = 5)
+
+        hotbar.grid(row=1, column=0, columnspan=20, sticky='ew')
         greet.grid(row = 1, column = 0, sticky = 'ew')
         date.grid(row = 1, column = 1, sticky = 'ew')
         clock.grid(row = 1, column = 2, sticky = 'ew')
         update_time()
 
-        menu.grid(row = 1, column = 0, sticky = 'nsew')
-        menuLabel.grid(row = 0, column = 0, sticky = 'nsew')
+        menu.grid(row = 2, column = 0, rowspan = 20, sticky = 'nsw')
+        menuLabel.grid(row = 0, column = 0, sticky = 'ew')
         addBookBtn.grid(row=1, column=0, sticky='ew')
         addCustomerBtn.grid(row=2, column=0, sticky='ew')
         addOrderBtn.grid(row=3, column=0, sticky='ew')
         quitBtn.grid(row=4, column=0, sticky='ew')
         
         system = Frame(self)
-        system.grid(row = 1, column = 1, sticky = 'n')
+        system.grid(row = 2, column = 1, sticky = 'n')
 
         data = Frame(self)
-        data.grid(row = 1, column = 2)
+        data.grid(row = 2, column = 2)
     
     def show_add_book_form(self):
         #form = Toplevel(self)
@@ -85,7 +88,7 @@ class BookstoreApp(Tk):
         global system
         system.destroy()
         system = Frame(self)
-        system.grid(row = 1, column = 1, sticky = 'n')
+        system.grid(row = 2, column = 1, sticky = 'n', padx = 10, pady = 10)
 
         Label(system, text="Title").pack()
         title_entry = Entry(system)
@@ -112,7 +115,22 @@ class BookstoreApp(Tk):
         global data
         data.destroy()
         data = Frame(self)
-        data.grid(row = 1, column = 2)
+        data.grid(row = 2, column = 2, pady = 10)
+
+        columns = ('title', 'author', 'isbn', 'price', 'quantity')
+
+        base = ttk.Treeview(data, selectmode='browse', columns=columns, show='headings')
+        base.pack(side='left')
+
+        vscroll = Scrollbar(data, orient='vertical', command=base.yview)
+        vscroll.pack(side='right', fill='x')
+        base.configure(xscrollcommand=vscroll.set)
+
+        base.heading('title', text='Title')
+        base.heading('author', text='Author')
+        base.heading('isbn', text='ISBN')
+        base.heading('price', text='Price')
+        base.heading('quantity', text='Quantity')
 
         def add_book():
             title = title_entry.get()
@@ -136,7 +154,7 @@ class BookstoreApp(Tk):
         global system
         system.destroy()
         system = Frame(self)
-        system.grid(row = 1, column = 1, sticky = 'n')
+        system.grid(row = 2, column = 1, sticky = 'n', padx = 10, pady = 10)
 
         Label(system, text="Name").pack()
         name_entry = Entry(system)
@@ -159,7 +177,21 @@ class BookstoreApp(Tk):
         global data
         data.destroy()
         data = Frame(self)
-        data.grid(row = 1, column = 2)
+        data.grid(row = 2, column = 2, pady = 10)
+
+        columns = ('name', 'cust_id', 'email', 'phone_num')
+
+        base = ttk.Treeview(data, selectmode='browse', columns=columns, show='headings')
+        base.pack(side='left')
+
+        vscroll = Scrollbar(data, orient='vertical', command=base.yview)
+        vscroll.pack(side='right', fill='x')
+        base.configure(xscrollcommand=vscroll.set)
+
+        base.heading('name', text='Name')
+        base.heading('cust_id', text='Customer ID')
+        base.heading('email', text='Email')
+        base.heading('phone_num', text='Phone Number')
 
         def add_customer():
             name = name_entry.get()
@@ -182,7 +214,7 @@ class BookstoreApp(Tk):
         global system
         system.destroy()
         system = Frame(self)
-        system.grid(row = 1, column = 1, sticky = 'n')
+        system.grid(row = 2, column = 1, sticky = 'n', padx = 10, pady = 10)
 
         Label(system, text="Customer ID").pack()
         customer_id_entry = Entry(system)
@@ -201,7 +233,20 @@ class BookstoreApp(Tk):
         global data
         data.destroy()
         data = Frame(self)
-        data.grid(row = 1, column = 2)
+        data.grid(row = 2, column = 2, pady = 10)
+
+        columns = ('cust_id', 'book_id', 'order_date')
+
+        base = ttk.Treeview(data, selectmode='browse', columns=columns, show='headings')
+        base.pack(side='left')
+
+        vscroll = Scrollbar(data, orient='vertical', command=base.yview)
+        vscroll.pack(side='right', fill='x')
+        base.configure(xscrollcommand=vscroll.set)
+
+        base.heading('cust_id', text='Customer ID')
+        base.heading('book_id', text='Book ID')
+        base.heading('order_date', text='Order Date')
 
         def add_order():
             customer_id = int(customer_id_entry.get())
