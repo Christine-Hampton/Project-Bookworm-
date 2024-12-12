@@ -1,0 +1,210 @@
+Order_id: 001
+Customer_id: 1001
+List_of_books:Harry Potter and the Philosopher's Stone - Slytherin Edition, 
+Shadow and Bone (The Shadow and Bone Trilogy Part 1)
+Order_date: 01-15-2023
+Book_ID: 1, 12
+
+Order_id: 002
+Customer_id:1002
+List_of_books:Harry Potter and the Chamber of Secrets - Slytherin Edition, 
+Crooked Kingdom (Six of Crows Series Part 2)
+Order_date: 02-20-2023
+Book_ID:2, 16
+
+Order_id: 003  
+Customer_id: 1003
+List_of_books: Harry Potter and the Prisoner of Azkaban - Slytherin Edition, 
+Ruin and Rising (The Shadow and Bone Trilogy Part 3)
+Order_date: 03-10-2023
+Book_ID: 3, 14 
+
+Order_id: 004
+Customer_id: 1004
+List_of_books:Harry Potter and the Goblet of Fire - Slytherin Edition, 
+City of Bones (Mortal Instruments Series Book 1)
+Order_date: 04-05-2023
+Book_ID: 4, 28
+
+Order_id: 005
+Customer_id: 1005
+List_of_books: Harry Potter and the Order of the Phoenix - Slytherin Edition, 
+The Song of Achilles
+Order_date: 05-22-2023
+Book_ID: 5, 29
+
+Order_id: 006 
+Customer_id:1006
+List_of_books: Harry Potter and the Half Blood Prince - Slytherin Edition, 
+Midnight Sun (Twilight Saga: Edward's Perspective)
+Order_date: 06-18-2023
+Book_ID: 6, 24
+
+Order_id: 007 
+Customer_id: 1007 
+List_of_books: Harry Potter and the Deathly Hallows - Slytherin Edition, 
+Phantom Heart (A Phantom of the Opera Fantasy Novel)
+Order_date: 07-25-2023
+Book_ID: 7, 21
+
+Order_id: 008 
+Customer_id: 1008 
+List_of_books:The Courting of Bristol Keats - Limited Edition, 
+Court of the Vampire Queen
+Order_date: 08-14-2023
+Book_ID:8, 9 
+
+Order_id: 009 
+Customer_id: 1009 
+List_of_books: Court of the Vampire Queen, 
+Frankenstein
+Order_date: 09-11-2023
+Book_ID:9, 10
+
+Order_id: 010
+Customer_id: 1010
+List_of_books: Frankenstein, 
+The Strange Case of Dr. Jekyll and Mr. Hyde and Other Stories
+Order_date: 10-06-2023
+Book_ID: 10, 11
+
+Order_id:011
+Customer_id: 1011
+List_of_books: The Strange Case of Dr. Jekyll and Mr. Hyde and Other Stories, 
+Siege and Storm (The Shadow and Bone Trilogy Part 2)
+Order_date: 11-23-2023
+Book_ID: 11, 13
+
+Order_id: 012
+Customer_id: 1012
+List_of_books: Shadow and Bone (The Shadow and Bone Trilogy Part 1), 
+Six of Crows (Six of Crows Series Part 1)
+Order_date: 12-17-2023
+Book_ID: 12, 15
+
+Order_id: 013 
+Customer_id: 1013 
+List_of_books: Siege and Storm (The Shadow and Bone Trilogy Part 2), 
+Ordinary Monsters
+Order_date: 01-09-2024
+Book_ID: 13, 17
+
+Order_id: 014 
+Customer_id: 1014
+List_of_books: Ruin and Rising (The Shadow and Bone Trilogy Part 3), 
+Phantom of The Opera and Other Gothic Tales
+Order_date: 02-26-2024
+Book_ID:14, 18
+
+Order_id: 015
+Customer_id: 1015 
+List_of_books: Six of Crows (Six of Crows Series Part 1), 
+Dracula and Other Horror Classics
+Order_date: 03-15-2024
+Book_ID:15, 19
+
+Order_id: 016 
+Customer_id: 1016
+List_of_books: Crooked Kingdom (Six of Crows Series Part 2), 
+Classic Ghost Stories
+Order_date:04-08-2024
+Book_ID: 16, 20
+
+Order_id: 017
+Customer_id: 1017
+List_of_books: Ordinary Monsters, 
+Phantom Heart (A Phantom of the Opera Fantasy Novel)
+Order_date:05-21-2024
+Book_ID:17, 21
+
+Order_id: 018
+Customer_id: 1018
+List_of_books: Phantom of The Opera and Other Gothic Tales, 
+The Twilight Saga Complete Collection
+Order_date: 06-27-2024
+Book_ID:18, 22
+
+Order_id: 019
+Customer_id: 1019
+List_of_books: Dracula and Other Horror Classics, 
+Life and Death: Twilight Reimagined (The Twilight Saga, 1.5)
+Order_date: 07-19-2024
+Book_ID: 19, 23
+
+Order_id: 020
+Customer_id: 1020
+List_of_books:Classic Ghost Stories, 
+Midnight Sun (Twilight Saga: Edward's Perspective)
+Order_date: 08-10-2024
+Book_ID: 20, 24
+
+Order_id: 021
+Customer_id: 1021
+List_of_books:Phantom Heart (A Phantom of the Opera Fantasy Novel), 
+Fourth Wing (Part 1)
+Order_date: 09-05-2024
+Book_ID: 21, 25
+
+Order_id: 022
+Customer_id: 1022
+List_of_books: The Twilight Saga Complete Collection, 
+Iron Flame (Fourth Wing Part 2)
+Order_date: 10-15-2024
+Book_ID:22, 26
+
+Order_id: 023
+Customer_id: 1023
+List_of_books: Life and Death: Twilight Reimagined (The Twilight Saga, 1.5), 
+From Blood and Ash
+Order_date: 11-08-2024
+Book_ID: 23, 27
+
+Order_id: 024
+Customer_id: 1024
+List_of_books: Midnight Sun (Twilight Saga: Edward's Perspective), 
+City of Bones (Mortal Instruments Series Book 1)
+Order_date: 12-22-2024
+Book_ID: 24, 28
+
+Order_id: 025
+Customer_id: 1025
+List_of_books: Fourth Wing (Part 1), 
+The Song of Achilles
+Order_date: 01-18-2025
+Book_ID:25, 29
+
+Order_id: 026 
+Customer_id: 1026
+List_of_books: Iron Flame (Fourth Wing Part 2), 
+Wicked and Son of a Witch
+Order_date: 02-11-2025
+Book_ID:26, 30
+
+Order_id: 027
+Customer_id: 1027
+List_of_books:From Blood and Ash, 
+Harry Potter and the Philosopher's Stone - Slytherin Edition
+Order_date: 03-07-2025
+Book_ID:27, 1
+
+Order_id: 028
+Customer_id: 1028
+List_of_books: City of Bones (Mortal Instruments Series Book 1), 
+Harry Potter and the Chamber of Secrets - Slytherin Edition
+Order_date:04-04-2025
+Book_ID: 28, 2
+
+Order_id: 029
+Customer_id: 1029
+List_of_books: The Song of Achilles, 
+Harry Potter and the Prisoner of Azkaban - Slytherin Edition
+Order_date: 05-09-2025
+Book_ID:  29, 3
+
+Order_id: 030
+Customer_id: 1030
+List_of_books: Wicked and Son of a Witch, 
+Harry Potter and the Goblet of Fire - Slytherin Edition
+Order_date: 06-02-2025
+Book_ID: 30,4
+

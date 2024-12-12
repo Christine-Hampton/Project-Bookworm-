@@ -1,0 +1,271 @@
+Title: Harry potter and the Philosophers Stone - Slytherin Edition
+Author:J.K. Rowling 
+Genre: Fantasy
+Isbn: 9781408883754
+Price: $40
+Quantity:5
+https://images.isbndb.com/covers/37/54/9781408883754.jpg
+Book_ID: 1
+
+Title: Harry Potter and the Chamber of secrets - Slytherin Edition
+Author:J.K. Rowling
+Genre: Fantasy
+Isbn: 978140889123 
+Price: $30
+Quantity: 5
+https://images.isbndb.com/covers/81/23/9781408898123.jpg
+Book_ID: 2
+
+Title: Harry Potter and the Prisoner of Azkaban - Slytherin Edition
+Author: J.K. Rowling
+Genre: Fantasy
+Isbn: 9781526606235
+Price: $25
+Quantity: 5
+https://images.isbndb.com/covers/62/35/9781526606235.jpg
+Book_ID: 3
+
+Title: Harry Potter and the Goblet of Fire - Slytherin Edition
+Author: J.K Rowling
+Genre: Fantasy
+Isbn: 9781526610348
+Price: $20
+Quantity: 5
+https://images.isbndb.com/covers/03/48/9781526610348.jpg
+Book_ID: 4
+
+Title: Harry Potter and the Order of the Pheonix - Slytherin Edition
+Author:J.K. Rowling
+Genre:Fantasy
+Isbn: 9781526618214
+Price: $15
+Quantity: 5
+https://images.isbndb.com/covers/82/14/9781526618214.jpg
+Book_ID: 5
+
+Title: Harry Potter and the Half Blood Prince - Slytherin Edition
+Author: J.K. Rowling
+Genre: Fantasy
+Isbn: 9781526618290
+Price: $20
+Quantity: 5
+https://images.isbndb.com/covers/82/90/9781526618290.jpg
+Book_ID: 6
+
+Title: Harry Potter and the Deathly Hallows - Slytherin Edition
+Author: J.K. Rowling
+Genre: Fantasy
+Isbn: 9781526618975
+Price: $20
+Quantity:5
+https://images.isbndb.com/covers/83/75/9781526618375.jpg
+Book_ID: 7
+
+Title: The Courting of Bristol Keats - Limited Edition
+Author: Mary E. Pearson
+Genre:Fantasy/Romance
+Isbn: 9781250331977
+Price: $25
+Quantity:5
+https://images.isbndb.com/covers/19/77/9781250331977.jpg
+Book_ID: 8
+
+Title: Court of the Vampire Queen
+Author: Katee Robert
+Genre: Reverse Harem Romance 
+Isbn: 9781464230325
+Price: $35
+Quantity: 5
+https://images.isbndb.com/covers/8698143482709.jpg
+Book_ID: 9
+
+Title: Frankenstein 
+Author: Mary Shelley
+Genre: Science Fiction
+Isbn: 9781435159624
+Price: $20
+Quantity: 5
+https://images.isbndb.com/covers/26934823482698.jpg
+Book_ID: 10
+
+Title: The Strange Case of Dr. Jekyll and Mr. Hyde and other stories
+Author: Robert Louis Stevenson 
+Genre: Gothic Horror
+Isbn: 9781435163096
+Price: $15
+Quantity: 5
+https://images.isbndb.com/covers/26969543482698.jpg
+Book_ID: 11
+
+Title: Shadow and Bone (the Shadow and Bone Trilogy part 1)
+Author: Leigh Bardugo
+Genre: Fantasy Saga
+Isbn: 9781250027436
+Price: $10
+Quantity: 5
+https://images.isbndb.com/covers/1189293482633.jpg
+Book_ID: 12
+
+Title: Siege and Storm (The Shadow and Bone Trilogy part 2)
+Author: Leigh Bardugo
+Genre: Fantasy Saga
+Isbn: 9781250044433
+Price: $10
+Quantity: 5
+https://images.isbndb.com/covers/44/33/9781250044433.jpg
+Book_ID: 13
+
+Title:  Ruin and Rising (The Shadow and Bone Trilogy part 3)
+Author:Leigh Bardugo
+Genre: Fantasy Saga
+Isbn: 9781250063168
+Price: $10
+Quantity: 5
+https://images.isbndb.com/covers/31/68/9781250063168.jpg
+Book_ID: 14
+
+Title: Six of Crows (Six of Crows series part 1)
+Author: Leigh Bardugo
+Genre: Fantasy
+Isbn: 9781627792127
+Price: $15
+Quantity: 5
+https://images.isbndb.com/covers/21/27/9781627792127.jpg
+Book_ID: 15
+
+Title: Crooked Kingdom (Six of Crows series part 2)
+Author: Leigh Bardugo
+Genre: Fantasy 
+Isbn: 9781627792134
+Price: $15
+Quantity: 5
+https://images.isbndb.com/covers/21/34/9781627792134.jpg
+Book_ID: 16
+
+Title: Ordinary monsters
+Author: J.M.Miro 
+Genre: Historical Fantasy 
+Isbn: 9781250833662
+Price: $20
+Quantity: 5
+https://images.isbndb.com/covers/36/62/9781250833662.jpg
+Book_ID:17
+
+Title: Phantom of The Opera and other Gothic Tales
+Author: Horace Walpole/Gaston Leroux
+Genre: Gothic Horror 
+Isbn: 9781435167131
+Price: $40
+Quantity: 5
+https://images.isbndb.com/covers/71/31/9781435167131.jpg
+Book_ID: 18
+
+Title: Dracula and Other Horror Classics
+Author: Bram Stoker
+Genre: Gothic Horror
+Isbn: 9781435142817
+Price: $40
+Quantity: 5
+https://images.isbndb.com/covers/28/17/9781435142817.jpg
+Book_ID: 19
+
+Title: Classic Ghost stories
+Author:Edgar Allan Poe, Charles Dickens and others
+Genre: Gothic Horror
+Isbn: 9781438167896
+Price: $45
+Quantity: 5
+https://images.isbndb.com/covers/27017543482698.jpg
+Book_ID:20
+
+Title:  Phantom Heart (A Phantom of the Opera fantasy novel)
+Author: Kelly Creagh
+Genre: Fantasy/Romance 
+Isbn: 9780593116043
+Price: $25
+Quantity: 5
+https://images.isbndb.com/covers/4150223482399.jpg 
+Book_ID: 21
+
+Title: The twilight Saga Complete collection
+Author: Stephanie Meyer
+Genre: Fantasy/Romance 
+Isbn: 9780316243988
+Price: $100
+Quantity: 5
+https://images.isbndb.com/covers/15922883482300.jpg
+Book_ID:22
+
+Title: Life and Death: Twilight Reimagined (The Twilight saga, 1.5)
+Author: Stephanie Meyer
+Genre: Fantasy
+Isbn: 9780316300865
+Price: $15
+Quantity:5
+https://images.isbndb.com/covers/08/65/9780316300865.jpg
+Book_ID: 23
+
+
+Title: Midnight Sun (Twilight Saga: Edwards Perspective)
+Author: Stephanie Meyer 
+Genre: Fantasy
+Isbn: 978031670746
+Price: $20
+Quantity: 5
+https://images.isbndb.com/covers/70/46/9780316707046.jpg
+Book_ID: 24
+
+Title: Fourth Wing (part 1)
+Author: Rebecca Yarros
+Genre: Fantasy 
+Isbn: 9781649374042
+Price: $30
+Quantity:5
+https://images.isbndb.com/covers/40/42/9781649374042.jpg
+Book_ID:25
+
+Title: Iron Flame (Fourth Wing part 2)
+Author: Rebecca Yarros
+Genre: Fantasy
+Isbn: 9781649374172
+Price: $35
+Quantity: 5
+https://images.isbndb.com/covers/41/72/9781649374172.jpg
+Book_ID: 26
+
+Title: From Blood and Ash
+Author: Jennifer L. Armentrout
+Genre: Fantasy
+Isbn: 9781352457463
+Price: $25
+Quantity: 5
+https://images.isbndb.com/covers/4042063482883.jpg
+Book_ID:27
+
+Title: City of Bones (Mortal Instruments series Book 1)
+Author: Cassandra Clare
+Genre: Fantasy 
+Isbn: 9781416914820
+Price: $25
+Quantity: 5
+https://images.isbndb.com/covers/42/80/9781416914280.jpg
+Book_ID: 28
+
+Title: The song of Achilles 
+Author: Madeline Miller 
+Genre: Historical Fiction
+Isbn: 9780062060627
+Price: $20
+Quantity: 5
+https://images.isbndb.com/covers/06/24/9780062060624.jpg
+Book_ID:29
+
+Title: Wicked and Son of a Witch 
+Author: Gregory Macguire
+Genre: Fantasy 
+Isbn: 9780061714535
+Price: $50
+Quantity: 5
+https://images.isbndb.com/covers/26435243482209.jpg
+Book_ID: 30
+
