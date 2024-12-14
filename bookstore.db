@@ -1,11 +1,11 @@
 import sqlite3
 
 def create_tables():
-    connection = sqlite3.connect('bookstor.db')
+    connection = sqlite3.connect('bookstore.db')
     cursor = connection.cursor()
 
     # Create books table
-    cursor.exectue( '''
+    cursor.execute( '''
     CREATE TABLE IF NOT EXISTS BOOKS (
         id INTEGER PRIMARY KEY,
         tite TEXT,
@@ -20,7 +20,8 @@ def create_tables():
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS customers(
         id INTEGER PRIMARY KEY,
-        name TEXT,
+        first_name TEXT,
+		last_name TEXT,
         customer_id TEXT,
         email TEXT,
         phone_number TEXT
