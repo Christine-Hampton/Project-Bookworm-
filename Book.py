@@ -1,10 +1,9 @@
 import sqlite3
 
 class Book: 
-    def __init__(self, title, author, genre, isbn, price, quantity):
+    def __init__(self, title, author, isbn, price, quantity):
         self.title = title
         self.author = author
-        self.genre = genre
         self.isbn = isbn
         self.price = price
         self.quantity = quantity

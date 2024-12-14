@@ -1,4 +1,4 @@
-from GUI import BookstoreApp 
+from GUI import BookstoreApp
 import tkinter as TK
 
 if __name__ == "__main__":

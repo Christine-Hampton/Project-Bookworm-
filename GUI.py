@@ -117,7 +117,7 @@ class BookstoreApp(Tk):
         data = Frame(self)
         data.grid(row = 2, column = 2, pady = 10)
 
-        columns = ('title', 'author', 'isbn', 'price', 'quantity')
+        columns = ('book_id', 'title', 'author', 'isbn', 'price', 'quantity')
 
         base = ttk.Treeview(data, selectmode='browse', columns=columns, show='headings')
         base.pack(side='left')
@@ -126,6 +126,7 @@ class BookstoreApp(Tk):
         vscroll.pack(side='right', fill='x')
         base.configure(xscrollcommand=vscroll.set)
 
+        base.heading('book_id', text='Book ID')
         base.heading('title', text='Title')
         base.heading('author', text='Author')
         base.heading('isbn', text='ISBN')
@@ -143,9 +144,22 @@ class BookstoreApp(Tk):
             new_book.save_to_db()
             print(f"Book Added: {new_book.title}")
             #form.destroy()
-            self.view_inventory()
+            view_inventory()
 
+        def view_inventory():
+            for record in base.get_children():
+                base.delete(record)
+            conn = sqlite3.connect('bookstore.db')
+            c = conn.cursor()
+            c.execute("SELECT * FROM books")
+            records = c.fetchall()
+            for record in records:
+                base.insert(parent='', index='end', text='', values=(record[0], record[1], record[2], record[3], record[4], record[5]))
+            conn.commit()
+            conn.close()
+                
         Button(system, text="Add", command=add_book).pack()
+        view_inventory()
     
     def show_add_customer_form(self):
         #form = Toplevel(self)
@@ -159,10 +173,6 @@ class BookstoreApp(Tk):
         Label(system, text="Name").pack()
         name_entry = Entry(system)
         name_entry.pack()
-
-        Label(system, text="Customer ID").pack()
-        customer_id_entry= Entry(system)
-        customer_id_entry.pack()
 
         Label(system, text="Email").pack()
         email_entry = Entry(system)
@@ -179,7 +189,7 @@ class BookstoreApp(Tk):
         data = Frame(self)
         data.grid(row = 2, column = 2, pady = 10)
 
-        columns = ('name', 'cust_id', 'email', 'phone_num')
+        columns = ('cust_id', 'name', 'email', 'phone_num')
 
         base = ttk.Treeview(data, selectmode='browse', columns=columns, show='headings')
         base.pack(side='left')
@@ -188,24 +198,36 @@ class BookstoreApp(Tk):
         vscroll.pack(side='right', fill='x')
         base.configure(xscrollcommand=vscroll.set)
 
-        base.heading('name', text='Name')
         base.heading('cust_id', text='Customer ID')
+        base.heading('name', text='Name')
         base.heading('email', text='Email')
         base.heading('phone_num', text='Phone Number')
 
         def add_customer():
             name = name_entry.get()
-            customer_id = customer_id_entry.get()
             email = email_entry.get()
             phone_number = phone_entry.get()
 
-            new_customer = Customer(name, customer_id, email, phone_number)
-            new_customer.save_tp_db()
+            new_customer = Customer(name, email, phone_number)
+            new_customer.save_to_db()
             print(f"Customer Added: {new_customer.name}")
             #form.destroy()
-            self.view_customers()
+            view_customers()
+
+        def view_customers():
+            for record in base.get_children():
+                base.delete(record)
+            conn = sqlite3.connect('bookstore.db')
+            c = conn.cursor()
+            c.execute("SELECT * FROM customers")
+            records = c.fetchall()
+            for record in records:
+                base.insert(parent='', index='end', text='', values=(record[0], record[1], record[2], record[3]))
+            conn.commit()
+            conn.close()
 
         Button(system, text="Add", command=add_customer).pack()
+        view_customers()
 
     def show_add_order_form(self):
         #form = Toplevel(self)
@@ -257,7 +279,21 @@ class BookstoreApp(Tk):
             new_order.save_to_db()
             print(f"Order Added: Customer ID {new_order.customer_id}, Book ID {new_order.book_id}")
             #form.destroy()
-        
+            view_orders()
+
+        def view_orders():
+            for record in base.get_children():
+                base.delete(record)
+            conn = sqlite3.connect('bookstore.db')
+            c = conn.cursor()
+            c.execute("SELECT * FROM orders")
+            records = c.fetchall()
+            for record in records:
+                base.insert(parent='', index='end', text='', values=(record[1], record[2], record[3]))
+            conn.commit()
+            conn.close()
+
+        view_orders()
         Button(system, text="Add", command=add_order).pack()
 
     def quit(self):
@@ -267,3 +303,4 @@ class BookstoreApp(Tk):
 if __name__ == "__main__":
     app = BookstoreApp()
     app.mainloop()
+
