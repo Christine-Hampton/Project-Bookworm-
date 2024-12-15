@@ -14,7 +14,7 @@ First_name: Emma
 Last_name: Williams
 Customer_id: 1003
 Email: emma.williams@example.com 
-Phone number:(555) 345-6789
+Phone number: (555) 345-6789
 
 First_name: Noah
 Last_name: Brown
@@ -22,9 +22,9 @@ Customer_id: 1004
 Email: noah.brown@example.com 
 Phone number: (555) 456-7890
 
-First_name:Ava 
+First_name: Ava 
 Last_name: Jones 
-Customer_id:1005
+Customer_id: 1005
 Email: ava.jones @example.com 
 Phone number: (555) 567-8901
 
@@ -36,23 +36,23 @@ Phone number: (555) 678-9012
 
 First_name: Isabella 
 Last_name: Martinez
-Customer_id:1007
+Customer_id: 1007
 Email: isabella.martinez@example.com 
-Phone number:(555) 789-0123
+Phone number: (555) 789-0123
 
 First_name: Mason 
 Last_name: Rodriguez 
-Customer_id:1008
+Customer_id: 1008
 Email: mason.rodriguez@example.com
-Phone number:(555) 890-1234
+Phone number: (555) 890-1234
 
 First_name: Sophia
 Last_name: Davis
-Customer_id:1009 
+Customer_id: 1009 
 Email: sophia.davis@example.com 
 Phone number: (555) 901-2345
 
-First_name:James
+First_name: James
 Last_name: Miller 
 Customer_id: 1010
 Email: james.miller@example.com  
@@ -62,7 +62,7 @@ First_name: Mia
 Last_name: Willson
 Customer_id: 1011
 Email: mia.willson@example.com 
-Phone number:(556) 123-4567 
+Phone number: (556) 123-4567 
 
 First_name: Oliver 
 Last_name: Moore 
@@ -84,7 +84,7 @@ Phone number: (556) 456-7890
 
 First_name: Charlotte 
 Last_name: Thomas 
-Customer_id:1015
+Customer_id: 1015
 Email: charlotte.thomas@example.com 
 Phone number: (556) 567-8901
 
@@ -102,19 +102,19 @@ Phone number: (556) 789-0123
  
 First_name: Elijah 
 Last_name: Harris
-Customer_id:1018
+Customer_id: 1018
 Email: elijah.harris@example.com 
 Phone number: (556) 890-1234
 
 First_name: Evelyn
 Last_name: Clark 
-Customer_id:1019
+Customer_id: 1019
 Email:evelyn.clark@example.com 
-Phone number:(556) 901-2345
+Phone number: (556) 901-2345
 
 First_name: Alexander 
 Last_name: Lewis 
-Customer_id:1020
+Customer_id: 1020
 Email: alexander.lewis@example.com 
 Phone number: (556) 012-3456
 
@@ -126,13 +126,13 @@ Phone number: (557) 123-4567
 
 First_name: Jackson 
 Last_name: Walker 
-Customer_id:1022
+Customer_id: 1022
 Email: jackson.walker@example.com 
 Phone number: (557) 234-5678 
 
 First_name: Scarlett 
 Last_name: Hall 
-Customer_id:1023
+Customer_id: 1023
 Email: scarlett.hall@example.com 
 Phone number: (557) 345-6789
 
@@ -150,15 +150,15 @@ Phone number: (557) 567-8901
 
 First_name: Aiden 
 Last_name: King 
-Customer_id:1026
+Customer_id: 1026
 Email:aiden.king@example.com 
-Phone number:(557) 678-9012
+Phone number: (557) 678-9012
 
 First_name: Ella 
-Last_name:Wright 
-Customer_id:1027
+Last_name: Wright 
+Customer_id: 1027
 Email: ella.wright@example.com 
-Phone number:(557) 789-0123
+Phone number: (557) 789-0123
 
 First_name: Daniel 
 Last_name: Scott 
@@ -174,6 +174,8 @@ Phone number: (557) 901-2345
 
 First_name: Matthew 
 Last_name: Adams 
-Customer_id:1030
+Customer_id: 1030
 Email: matthew.adams@example.com 
-Phone number:(557) 012-3456
+Phone number: (557) 012-3456
+
+a
