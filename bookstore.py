@@ -29,12 +29,12 @@ def create_tables():
     # Create orders table
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS orders (
-        id INTEGER PRIMARY KEY,
-        customer_id INTEGER,
+        order_id INTEGER PRIMARY KEY,
         book_id INTEGER,
+        customer_id INTEGER,
         order_date TEXT,
-        FOREIGN KEY (customer_id) REFERENCES customers (customer_id),
-        FOREIGN KEY (book_id) REFERENCES books (book_id)
+        FOREIGN KEY (book_id) REFERENCES books (book_id),
+        FOREIGN KEY (customer_id) REFERENCES customers (customer_id)
     )
 ''')
     
